@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitcount:wght@100..900&family=Cabin:ital,wght@0,400..700;1,400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Rose:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Biodata</title>
+  </head>
+  <body>
+    <div class="bg"></div>
+
+    <div class="container">
+      <nav class="navbar">
+        <div class="navigation">
+          <img src="./img/avatar.png" alt="" width="50px" />
+          <ul class="nav-list">
+            <li><a href="#about">About me</a></li>
+            <li><a href="#skill">Skill</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+          </ul>
+        </div>
+
+        <button class="nav-button">Contact Me</button>
+      </nav>
+
+      <main>
+        <div class="introduction" id="about">
+          <div>
+            <h1>Hello, I'm Abil,<br />An Informatics Engineering Student.</h1>
+            <p>
+              I am an Informatics Engineering student with a strong interest in
+              programming, web development, and artificial intelligence. I enjoy
+              exploring different programming languages and working on small
+              projects to sharpen my skills.
+            </p>
+          </div>
+          <div>
+            <img src="./img/greetings.png" alt="" />
+          </div>
+        </div>
+
+        <div class="skill" id="skill">
+          <h1>Skill</h1>
+
+          <div class="skill-parent">
+            <div class="skill-category">
+              <div>
+                <img src="./img/web.png" alt="website" width="200px" />
+              </div>
+              <div class="skill-category-description">
+                <h3>Web Development</h3>
+                <ul>
+                  <li>NextJs</li>
+                  <li>ReactJs</li>
+                  <li>NodeJs</li>
+                  <li>Tailwind</li>
+                  <li>Typescript</li>
+                  <li>Javacript</li>
+                </ul>
+              </div>
+            </div>
+            <div class="skill-category">
+              <div>
+                <img src="./img/ai.png" alt="ai" width="200px" />
+              </div>
+              <div class="skill-category-description">
+                <h3>Artificial Intelligence</h3>
+                <ul>
+                  <li>Python</li>
+                  <li>Opencv</li>
+                  <li>Numpy</li>
+                  <li>ScikitLearn</li>
+                  <li>Pandas</li>
+                  <li>Matplotlib</li>
+                </ul>
+              </div>
+            </div>
+            <div class="skill-category">
+              <div>
+                <img src="./img/cp.png" alt="ai" width="150px" />
+              </div>
+              <div class="skill-category-description">
+                <h3>Competitive Programming</h3>
+                <ul>
+                  <li>Python</li>
+                  <li>Opencv</li>
+                  <li>Numpy</li>
+                </ul>
+              </div>
+            </div>
+            <div class="skill-category">
+              <div>
+                <img src="./img/design.png" alt="ai" width="150px" />
+              </div>
+              <div class="skill-category-description">
+                <h3>Design</h3>
+                <ul>
+                  <li>Figma</li>
+                  <li>Canva</li>
+                  <li>Miro</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact" id="contact">
+          <h1>Contact Me</h1>
+          <p>
+            Feel free to reach out for collaboration or just a friendly chat 🚀
+          </p>
+
+          <form class="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              required
+            />
+            <textarea
+              name="message"
+              placeholder="Your Message"
+              rows="5"
+              required
+            ></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </main>
+
+      <footer>
+        <div>
+          <img src="./img/instagram.png" alt="instagram" width="25px" />
+          <img src="/img/twitter.png" alt="twitter" width="25px" />
+          <img src="/img/github.png" alt="github" width="25px" />
+          <img src="/img/linkedin.png" alt="linkedin.png" width="25px" />
+        </div>
+
+        <div>
+          <p>Designed by vanilla html and css</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
