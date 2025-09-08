@@ -330,10 +330,10 @@ footer {
   }
 
   .skill-parent {
-    grid-template-columns: repeat(2, 1fr); /* full 1 kolom biar aman */
+    grid-template-columns: repeat(2, 1fr);
   }
   .skill-category {
-    flex-direction: column; /* biar isi dalamnya rapi */
+    flex-direction: column;
   }
 }
 
