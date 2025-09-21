@@ -32,6 +32,10 @@
 /* nav {
   background-color: #2b2d42;
 } */
+.navbar img {
+  align-self: flex-start;
+  z-index: 99;
+}
 
 .navbar {
   width: 100%;
@@ -40,24 +44,26 @@
   justify-content: space-between;
   align-items: center;
   position: fixed;
+  /* background-color: #464866; */
 }
 
 .navigation {
   /* background-color: antiquewhite; */
-  width: 70%;
+  width: 100%;
   display: flex;
   align-items: center;
-  /* justify-content: space-; */
+  justify-content: flex-end;
 }
 
 .nav-list {
-  width: 50%;
+  /* width: 100%; */
   /* background-color: aqua; */
   list-style: none;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-end;
   /* flex-direction: column; */
-  /* gap: 1rem; */
+  gap: 2rem;
+  transition: all ease 0.5s;
 }
 
 .nav-list li a {
@@ -70,6 +76,24 @@
 
 .nav-list li a:hover {
   color: rgb(164, 163, 163);
+}
+
+.hamburger-menu {
+  width: 2rem;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  /* background-color: aqua; */
+  /* display: flex; */
+  flex-direction: column;
+  gap: 0.2rem;
+  display: none;
+}
+
+.hamburger-menu span {
+  width: 20px;
+  height: 4px;
+  background-color: black;
 }
 
 /* Batas styling navbar list */
@@ -156,12 +180,14 @@ main {
   max-width: 1200px;
   margin: auto;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 2fr);
+  /* flex-wrap: wrap; */
   gap: 2rem;
 }
 
 .skill-category {
-  width: 100%;
+  /* flex: 1 1 calc(50% - 2rem); */
+  /* width: 50%; */
   background-color: #f9f9f9;
   border-radius: 1rem;
   display: flex;
@@ -173,6 +199,8 @@ main {
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
+  /* background-color: aqua; */
+  /* z-index: -1; */
 }
 
 .skill-category-description {
@@ -197,8 +225,9 @@ main {
 }
 
 .skill-category:hover {
-  transform: translateY(-5px);
+  transform: translateY(-2px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  /* z-index: -1; */
 }
 
 /* Batas styling skill */
@@ -279,6 +308,36 @@ footer {
 /* Batas Styling Footer */
 
 @media (max-width: 768px) {
+  .hamburger-menu {
+    align-self: flex-start;
+    display: flex;
+    align-items: flex-end;
+    /* background-color: #464866; */
+    z-index: 99;
+  }
+
+  .nav-list {
+    /* display: flex; */
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    /* margin-top: 1rem; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-200%);
+    opacity: 0;
+    transition: all ease 0.5s;
+    background-color: #d9d9d9;
+    z-index: 30;
+  }
+
+  .nav-list.hidden {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
   .nav-list li a {
     font-size: 0.8rem;
   }
